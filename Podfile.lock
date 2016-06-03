@@ -1,0 +1,14 @@
+PODS:
+  - HockeySDK (4.0.1):
+    - HockeySDK/AllFeaturesLib (= 4.0.1)
+  - HockeySDK/AllFeaturesLib (4.0.1)
+
+DEPENDENCIES:
+  - HockeySDK (~> 4.0)
+
+SPEC CHECKSUMS:
+  HockeySDK: 1b69a82782f6a3d4a1c0b1f04dca4bca83fc8c82
+
+PODFILE CHECKSUM: ed0f1ee85f8e76b54fa6023f27e14f7ab12bcf7f
+
+COCOAPODS: 1.0.1
