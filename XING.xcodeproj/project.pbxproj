@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4565F32F378DF4C075D500A /* libPods-XING.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BD171EC75EE66DA1F7A571 /* libPods-XING.a */; };
+		DA47615F1D01B23C001C42A3 /* xing-config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA47615E1D01B23C001C42A3 /* xing-config.xcconfig */; };
 		DA68AFB71D0187FE0031BFC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA68AFB61D0187FE0031BFC9 /* main.m */; };
 		DA68AFBA1D0187FE0031BFC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA68AFB91D0187FE0031BFC9 /* AppDelegate.m */; };
 		DA68AFBD1D0187FE0031BFC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA68AFBC1D0187FE0031BFC9 /* ViewController.m */; };
@@ -21,6 +22,7 @@
 		31BD171EC75EE66DA1F7A571 /* libPods-XING.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XING.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B590CEC9BFE8BCD4CA85FE01 /* Pods-XING.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XING.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XING/Pods-XING.debug.xcconfig"; sourceTree = "<group>"; };
 		DA68AFB21D0187FE0031BFC9 /* XING.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XING.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA47615E1D01B23C001C42A3 /* xing-config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "xing-config.xcconfig"; path = "configs/xing-config.xcconfig"; sourceTree = SOURCE_ROOT; };
 		DA68AFB61D0187FE0031BFC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA68AFB81D0187FE0031BFC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA68AFB91D0187FE0031BFC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		DA68AFB51D0187FE0031BFC9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA47615E1D01B23C001C42A3 /* xing-config.xcconfig */,
 				DA68AFB61D0187FE0031BFC9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -168,6 +171,7 @@
 			files = (
 				DA68AFC51D0187FE0031BFC9 /* LaunchScreen.storyboard in Resources */,
 				DA68AFCD1D018ABD0031BFC9 /* configuration.plist in Resources */,
+				DA47615F1D01B23C001C42A3 /* xing-config.xcconfig in Resources */,
 				DA68AFC21D0187FE0031BFC9 /* Assets.xcassets in Resources */,
 				DA68AFC01D0187FE0031BFC9 /* Main.storyboard in Resources */,
 			);
@@ -342,25 +346,25 @@
 		};
 		DA68AFCA1D0187FE0031BFC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B590CEC9BFE8BCD4CA85FE01 /* Pods-XING.debug.xcconfig */;
+			baseConfigurationReference = DA47615E1D01B23C001C42A3 /* xing-config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XING/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xing.XING.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_XING)";
 			};
 			name = Debug;
 		};
 		DA68AFCB1D0187FE0031BFC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC0592795CBE9EEDF6803A63 /* Pods-XING.release.xcconfig */;
+			baseConfigurationReference = DA47615E1D01B23C001C42A3 /* xing-config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XING/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xing.XING.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PRODUCT_NAME_XING)";
 				PROVISIONING_PROFILE = "19cf402a-0598-4414-856c-c214109fb880";
 			};
 			name = Release;
